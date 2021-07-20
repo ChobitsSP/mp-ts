@@ -20,6 +20,8 @@ gulp.task('alias', function () {
     .pipe(gulp.dest('src'));
 });
 
-gulp.task('default', function () {
+gulp.task('watch', function () {
   return gulp.watch('src/**/*.ts', {}, gulp.series('tsc', 'alias'))
 });
+
+gulp.task('default', gulp.series('tsc', 'alias', 'watch'));
