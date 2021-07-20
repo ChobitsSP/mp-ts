@@ -24,4 +24,6 @@ gulp.task('watch', function () {
   return gulp.watch('src/**/*.ts', {}, gulp.series('tsc', 'alias'))
 });
 
-gulp.task('default', gulp.series('tsc', 'alias', 'watch'));
+gulp.task('build', gulp.series('tsc', 'alias'));
+
+gulp.task('dev', gulp.series('build', 'watch'));
