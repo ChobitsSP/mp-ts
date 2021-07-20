@@ -7,7 +7,7 @@ interface MyModel {
 
 Page({
   data: {
-    logs: [],
+    logs: [] as MyModel[],
   },
   onLoad() {
     const logs: MyModel[] = (wx.getStorageSync('logs') || []).map((log: string) => {
