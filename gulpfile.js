@@ -4,6 +4,10 @@ const alias = require('gulp-ts-path-alias');
 
 gulp.task('tsc', function (cb) {
   exec('npm run tsc', function (err, stdout, stderr) {
+    if (err != null) {
+      console.log(stdout);
+      console.log(stderr);
+    }
     cb(err);
   });
 });
