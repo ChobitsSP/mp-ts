@@ -32,7 +32,7 @@
       }
     ]
   },
-  "miniprogramRoot": "miniprogram/",
+  "miniprogramRoot": "src/",
   "compileType": "miniprogram",
   "libVersion": "2.18.0",
   "projectname": "mp-ts",

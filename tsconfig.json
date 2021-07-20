@@ -22,7 +22,7 @@
     "typeRoots": ["./typings"],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["miniprogram/*"]
+      "@/*": ["src/*"]
     }
   },
   "include": ["./**/*.ts"],

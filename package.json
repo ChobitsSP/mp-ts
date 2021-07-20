@@ -1,5 +1,5 @@
 {
-  "name": "miniprogram-ts-quickstart",
+  "name": "mp-ts",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -7,11 +7,16 @@
     "compile": "./node_modules/typescript/bin/tsc",
     "tsc": "node ./node_modules/typescript/lib/tsc.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "typescript"
+  ],
+  "author": "Chobits",
   "license": "",
   "dependencies": {
     "lodash": "^4.17.21",
+    "miniprogram-computed": "^4.0.4",
+    "mobx-miniprogram": "^4.13.2",
+    "mobx-miniprogram-bindings": "^2.0.0",
     "moment": "^2.29.1"
   },
   "devDependencies": {

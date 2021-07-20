@@ -13,13 +13,13 @@ gulp.task('tsc', function (cb) {
 });
 
 gulp.task('alias', function () {
-  return gulp.src(['miniprogram/**/*.js'])
+  return gulp.src(['src/**/*.js'])
     .pipe(alias('.', {
-      "@/*": ["miniprogram/*"]
+      "@/*": ["src/*"]
     }))
-    .pipe(gulp.dest('miniprogram'));
+    .pipe(gulp.dest('src'));
 });
 
 gulp.task('default', function () {
-  return gulp.watch('miniprogram/**/*.ts', {}, gulp.series('tsc', 'alias'))
+  return gulp.watch('src/**/*.ts', {}, gulp.series('tsc', 'alias'))
 });
