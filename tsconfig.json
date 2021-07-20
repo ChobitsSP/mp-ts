@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "strictNullChecks": false,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "module": "CommonJS",
     "target": "ES5",
     "allowJs": false,
@@ -18,7 +18,7 @@
     "removeComments": true,
     "pretty": true,
     "strictPropertyInitialization": false,
-    "lib": ["es6"],
+    "lib": ["esnext"],
     "typeRoots": ["./typings"],
     "baseUrl": ".",
     "paths": {
