@@ -6,7 +6,7 @@
   ],
   "settings": {
     "files.exclude": {
-			"**/*.js": true,
+			"src/**/*.js": true,
       "**/.git": true,
       "**/.svn": true,
       "**/.hg": true,
